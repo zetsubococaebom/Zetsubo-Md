@@ -19,13 +19,13 @@
 
 ## Install Several Packages And Run Bots
 
-csharp
+```csharp
 > apt-get update -y
 > apt-get upgrade -y
 > apt-get install -y git
 > apt-get install -y python
 > sh wibu.sh
-
+````
 
 <h2 align="center">Guide For Panel Users</h2>
 
@@ -41,7 +41,7 @@ csharp
 
 ## Here Is A List Of Features Of This Bot 
 
-csharp
+```csharp
 🍻| .self
 🍻| .public
 🍻| .toimg | reply stiker
@@ -57,7 +57,7 @@ csharp
 🍻| .addprem nomor/tag
 🍻| .delprem nomor/tag
 🍻| .sendpirtek
-
+```
 
 
 
