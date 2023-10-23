@@ -3,18 +3,18 @@
 <p align="center">
 <img src="https://telegra.ph/file/150f50669e93735c51aea.jpg" width="128" height="128"/>
 </p>
+
 <p align="center">
-<a href="#"><img title="Whatsapp-Bot" src="https://img.shields.io/badge/Whatsapp Bot-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
+<a href="https://github.com/zetsubococaebom"><img title="Author" src="https://img.shields.io/badge/Zetsubo-Md-black?style=for-the-badge&logo=whatsapp"></a>
+<p/>
+<p align="center">
+<a href="https://github.com/zetsubococaebom?tab=followers"><img title="Followers" src="https://img.shields.io/github/followers/zetsubococaebom?label=Followers&style=social"></a>
+<a href="https://github.com/zetsubococaebom/Zetsubo-Md/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/zetsubococaebom/Zetsubo-Md?&style=social"></a>
+<a href="https://github.com/zetsubococaebom/Zetsubo-Md/network/members"><img title="Fork" src="https://img.shields.io/github/forks/zetsubococaebom/Zetsubo-Md?style=social"></a>
+<a href="https://github.com/zetsubococaebom/Zetsubo-Md/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/zetsubococaebom/Zetsubo-Md?label=Watching&style=social"></a>
 </p>
-<p align="center">
-<a href="https://github.com/zetsubococaebom"><img title="Author" src="https://img.shields.io/badge/Author-zetsubococaebom-red.svg?style=for-the-badge&logo=github"></a>
-</p>
-<p align="center">
-<a href="https://github.com/zetsubococaebom/followers"><img title="Followers" src="https://img.shields.io/github/followers/zetsubococaebom?color=blue&style=flat-square"></a>
-<a href="https://github.com/zetsubococaebom/Zetsubo-Md/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/zetsubococaebom/whatsapp-bot?color=red&style=flat-square"></a>
-<a href="https://github.com/zetsubococaebom/Zetsubo-Md/network/members"><img title="Forks" src="https://img.shields.io/github/forks/zetsubococaebom/whatsapp-bot?color=red&style=flat-square"></a>
-<a href="https://github.com/zetsubococaebom/Zetsubo-Md/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/zetsubococaebom/whatsapp-bot?label=Watchers&color=blue&style=flat-square"></a>
-  
+</a>
+</p>  
 <h2 align="center">Guide For Those Of You Who Use Termux</h2>
 
 ## Install Several Packages And Run Bots
