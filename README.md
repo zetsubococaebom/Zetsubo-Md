@@ -11,9 +11,9 @@
 </p>
 <p align="center">
 <a href="https://github.com/zetsubococaebom/followers"><img title="Followers" src="https://img.shields.io/github/followers/zetsubococaebom?color=blue&style=flat-square"></a>
-<a href="https://github.com/zetsubococaebom/whatsapp-bot/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/zetsubococaebom/whatsapp-bot?color=red&style=flat-square"></a>
-<a href="https://github.com/zetsubococaebom/whatsapp-bot/network/members"><img title="Forks" src="https://img.shields.io/github/forks/zetsubococaebom/whatsapp-bot?color=red&style=flat-square"></a>
-<a href="https://github.com/zetsubococaebom/whatsapp-bot/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/zetsubococaebom/whatsapp-bot?label=Watchers&color=blue&style=flat-square"></a>
+<a href="https://github.com/zetsubococaebom/Zetsubo-Md/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/zetsubococaebom/whatsapp-bot?color=red&style=flat-square"></a>
+<a href="https://github.com/zetsubococaebom/Zetsubo-Md/network/members"><img title="Forks" src="https://img.shields.io/github/forks/zetsubococaebom/whatsapp-bot?color=red&style=flat-square"></a>
+<a href="https://github.com/zetsubococaebom/Zetsubo-Md/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/zetsubococaebom/whatsapp-bot?label=Watchers&color=blue&style=flat-square"></a>
   
 <h2 align="center">Guide For Those Of You Who Use Termux</h2>
 
