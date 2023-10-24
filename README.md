@@ -20,10 +20,10 @@
 ## Install Several Packages And Run Bots
 
 ```csharp
+> git clone https://github.com/zetsubococaebom/Zetsubo-Md
 > apt-get update -y
 > apt-get upgrade -y
 > apt-get install -y git
-> apt-get install -y python
 > sh wibu.sh
 ````
 
