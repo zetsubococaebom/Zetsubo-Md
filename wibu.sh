@@ -2,7 +2,7 @@
 #update tambahan
 apt-get update -y
 apt-get upgrade -y
-apt-get install -y nodejs libwebp ffmpeg ffmpeg npm
+apt-get install -y nodejs libwebp ffmpeg
 
 sleep 1
 clear
