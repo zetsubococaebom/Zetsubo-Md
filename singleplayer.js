@@ -123,23 +123,10 @@ currencyCode: 'INR'
 }
 }
 
-if (m.message && !m.isBaileys) {
-const fromHeader = chalk.bgMagenta.black(" FROM ");
-const pushName = chalk.bold(chalk.magenta(m.pushName));
-const sender = chalk.yellow(m.sender);
-
-console.log(`${fromHeader} ${pushName} ${sender}`);
-
-const inHeader = chalk.bgMagenta.black(" IN ");
-const inContent = chalk.bold(chalk.magenta(m.isGroup ? `Group: ${m.metadata.subject}` : `Private Chat: ${m.chat}`));
-
-console.log(`${inHeader} ${inContent}`);
-
-const messageHeader = chalk.bgMagenta.black(" MESSAGE ");
-const messageContent = chalk.green(m.body || m.type);
-
-console.log(`${messageHeader} ${messageContent}`);
-}
+        if (m.message) {
+            ryokun.readMessages([m.key])
+            console.log(chalk.black(chalk.bgWhite('[ PESAN ]')), chalk.black(chalk.bgGreen(new Date)), chalk.black(chalk.bgBlue(budy || m.mtype)) + '\n' + chalk.magenta('=> Dari'), chalk.green(pushname), chalk.yellow(m.sender) + '\n' + chalk.blueBright('=> Di'), chalk.green(m.isGroup ? pushname : 'Private Chat', m.chat))
+        }
 
 
 
