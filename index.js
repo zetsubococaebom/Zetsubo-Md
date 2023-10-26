@@ -56,6 +56,9 @@ const listcolor = ['aqua', 'red', 'blue', 'purple', 'magenta'];
 const randomcolor = listcolor[Math.floor(Math.random() * listcolor.length)];
 const randomcolor2 = listcolor[Math.floor(Math.random() * listcolor.length)];
 const randomcolor3 = listcolor[Math.floor(Math.random() * listcolor.length)];
+const randomcolor4 = listcolor[Math.floor(Math.random() * listcolor.length)];
+const randomcolor5 = listcolor[Math.floor(Math.random() * listcolor.length)];
+
 
 // Create Display Console 
 const welcomeMessage = `
@@ -256,7 +259,34 @@ ryokun.public = true;
                 vertivalLayout: 'default',
                 width: 80,
                 whitespaceBreak: false
-                }), `${randomcolor2}`))
+                }), `${randomcolor4}`))
+                
+        console.log(color(`                                       :\`  .
+                                   -s- -o.
+                                   -do./d+\`
+                       .\`-+:-\`:+:\` -hd+/dh:
+                   .+++++mmmdhNmdy++dmhshds-
+                ..-oNNNNNNNNNNNNNNmmmmmdmdds-
+              +hdmmNNNNNmmmmmNNNmmmmmmdddds:\`
+            -+mNNNNNdy+::-----:+shmmmmmddddddy:
+           .sdNNNNNd+-           \`-ohmmmddddhddo\`
+          \`:dNNNNh-..               .+hddddddhmms.                    
+         \`:dmmNNN:..                  .sddddddmmmy-
+         .osmNmNm-..                    :sdddddmmmo'
+         \`:NNNNNs..                      ./ydddmmh-\`
+           sdmNNNNs-                         -odmmmms-
+          \`-.:mNNNNd+.                         .ommmmmh-
+             \`ydhmNNNds:.                       +mmmmh.
+               .\`-+ydmNNmds+-\`                -:.\`
+                   \`\`-/oydmNNmyo-
+                          \`.:oymmmh+.
+                              \`-ohmmo.
+                                   .odd:
+                                     \`od:
+                                       /d\`
+                                        y.
+                                       .\`
+`,`${randomcolor5}`));
                 
                 console.log(color(`${welcomeMessage}`,`${randomcolor}`)) //Console-3
                 console.log(color(`📝*Connecting to WhatsApp web🖥️*`,`${randomcolor}`))
@@ -339,7 +369,7 @@ ryokun.public = true;
      * @param [*] values 
      * @returns 
      */
-    ryokun.sendPoll = (jid, name = '', values = [], selectableCount = 1) => { return hisoka.sendMessage(jid, { poll: { name, values, selectableCount }}) }
+    ryokun.sendPoll = (jid, name = '', values = [], selectableCount = 1) => { return ryokun.sendMessage(jid, { poll: { name, values, selectableCount }}) }
     
     
     /**
