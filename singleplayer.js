@@ -1,8 +1,9 @@
 /*
-> Dilarang Menjual Bot Ini Jikalau Anda Belum Menambahkan Beberapa Fitur, Minimal 8 Klo Lu Mau Jual
+
+> Jika Anda ingin menjual ulang bot ini, pastikan untuk selalu berperilaku etis, hindari tindakan menipu atau merugikan orang lain, dan jangan mengganti nama bot menjadi mirip atau sama dengan bot lain. Anda dapat mengganti nama bot setelah melakukan perubahan/modifikasi besar pada kode dan menjualnya sebagai karya Anda sendiri. Namun, hindari mengubahnya menjadi nama bot orang lain, kecuali jika Anda membuat nama yang berbeda untuk bot yang Anda modifikasi sendiri dengan menggunakan bot ini.
 
 > Kalo Mau Recode Kasih Credit gw ›
-         TheZetsub0Xygen/Ryo〽️
+         TheZetsubXygen/Ryo〽️
 
 📝| Created By TheZetsub0Xygen / Ryo
 🖥️| Base Ori By TheZetsub0Xygen / Ryo
@@ -81,6 +82,19 @@ const { titik } = require('./latx/titik.js')
 const { vapi } = require('./latx/vapi.js')
 const { zxvbug } = require('./latx/zxvbug.js')
 const { zetssnotgay } = require('./latx/zetsubonotgay.js')
+const { virtex2 } = require('./latx/virtex2.js')
+const { delaybug } = require('./latx/delaybug.js')
+const { ios3 } = require('./latx/ios3.js')
+const { ios4 } = require('./latx/ios4.js')
+const { ios5 } = require('./latx/ios5.js')
+const { ios6 } = require('./latx/ios6.js')
+const { ios7 } = require('./latx/ios7.js')
+const { superstar } = require('./latx/superstar.js')
+const { superkusuma } = require('./latx/superkusuma.js')
+
+//Fake
+const fakedoc = fs.readFileSync(`./src/bruhhh.apk`)
+const fakejpg = fs.readFileSync(`./src/bruhhh.jpg`)
 
 // Akses
 let premium = JSON.parse(fs.readFileSync('./dtbs/premium.json'))
@@ -89,6 +103,47 @@ let premium = JSON.parse(fs.readFileSync('./dtbs/premium.json'))
 const moji = ['📚', '💭', '💫', '🌌', '🌏', '〽️', '🌷', '🍁', '🪻',]
 const randomemoji = moji[Math.floor(Math.random() * moji.length)]
 
+//Media | mygirl
+const fiber = fs.readFileSync(`./kawai/fiber.jpg`)
+const egao = fs.readFileSync(`./kawai/egao.jpg`)
+const cikimori = fs.readFileSync(`./kawai/cikimori.jpg`)
+const asuka = fs.readFileSync(`./kawai/asuka.jpg`)
+const ange = fs.readFileSync(`./kawai/ange.jpg`)
+const mygirl = fs.readFileSync(`./kawai/mygirl.jpg`)
+const mygirl2 = fs.readFileSync(`./kawai/mygirl2.jpg`)
+const mygirl3 = fs.readFileSync(`./kawai/mygirl3.jpg`)
+const mygirl4 = fs.readFileSync(`./kawai/mygirl4.jpg`)
+const mygirl5 = fs.readFileSync(`./kawai/mygirl5.jpg`)
+const mygirl6 = fs.readFileSync(`./kawai/mygirl6.jpg`)
+
+//Music
+const lostkit = fs.readFileSync(`./music/lostkitten.mp3`)
+const coverup = fs.readFileSync(`./music/coverup.mp3`)
+
+
+//Ini Waktu | Waktu adalah emas,maka dari itu sentuh lah rumput.dan jangan nolep dikamar terus,usahakan tu kontol jangan dikocok terus.Lutut ama sikut lu kopong nanti
+const moment = require('moment-timezone')
+const time2 = moment().tz("Asia/Jakarta").format("HH:mm:ss")
+if(time2 < "19:00:00"){
+var ucapanWaktu = "Selamat Malam🌃"
+}
+if(time2 < "15:00:00"){
+var ucapanWaktu = "Selamat Sore🌄"
+ }
+if(time2 < "11:00:00"){
+var ucapanWaktu = "Selamat Siang🏞️"
+}
+if(time2 < "06:00:00"){
+var ucapanWaktu = "Selamat Pagi🏙️ "
+ }
+if(time2 < "23:59:00"){
+var ucapanWaktu = "Selamat Subuh🌆"
+}
+const wib = moment(Date.now()).tz("Asia/Jakarta").locale("id").format("HH:mm:ss z")
+const wita = moment(Date.now()).tz("Asia/Makassar").locale("id").format("HH:mm:ss z")
+const wit = moment(Date.now()).tz("Asia/Jayapura").locale("id").format("HH:mm:ss z")
+const salam2 = moment(Date.now()).tz("Asia/Jakarta").locale("id").format("a")
+
 //Status
 if (!ryokun.public) {
 if (!m.key.fromMe) return
@@ -96,32 +151,361 @@ if (!m.key.fromMe) return
 
 //Quoted 
 
+const ryocakep = {
+  key: {
+    fromMe: false,
+    participant: '0@s.whatsapp.net',
+    remoteJid: "status@broadcast"
+  },
+  message: {
+    orderMessage: {
+      orderId: "2029",
+      thumbnail: fakejpg, //image 0kb
+      itemCount: 909,
+      status: "INQUIRY",
+      surface: "CATALOG",
+      message: `🖥️༐ 𝐙𝐱𝐕 ⬪ 𝐌𝐞𝐬𝐬𝐚𝐠𝐞 𒑊 : ${m.body || m.mtype}`,
+      token: "AR6xBKbXZn0Xwmu76Ksyd7rnxI+Rx87HfinVlW4lwXa6JA=="
+    }
+  },
+  contextInfo: {
+    mentionedJid: m.sender.split,
+    forwardingScore: 999,
+    isForwarded: true
+  }
+};
+
 const qpay = {
-key: {
-remoteJid: '0@s.whatsapp.net',
-fromMe: false,
-id: '0@s.whatsapp.net',
-participant: '0@s.whatsapp.net'
-},
-message: {
-requestPaymentMessage: {
-currencyCodeIso4217: 'USD',
-amount1000: 999,
-requestFrom: '0@s.whatsapp.net',
-noteMessage: {
-extendedTextMessage: {
-text: `🖥️༐ ⬪ 𝐌𝐞𝐬𝐬𝐚𝐠𝐞 ✽ : ${m.body || m.mtype}`
+	key: {
+		remoteJid: 'status@broadcast',
+		fromMe: false,
+		id: '0@s.whatsapp.net',
+		participant: '0@s.whatsapp.net'
+	},
+	message: {
+		requestPaymentMessage: {
+			currencyCodeIso4217: 'USD',
+			amount1000: 999,
+			requestFrom: '0@s.whatsapp.net',
+			noteMessage: {
+				extendedTextMessage: {
+					text: `🖥️༐ 𝐙𝐱𝐕 ⬪ 𝐌𝐞𝐬𝐬𝐚𝐠𝐞 𒑊 : ${m.body || m.mtype}`
+				}
+			},
+			expiryTimestamp: 999999999,
+			amount: {
+				value: 91929291929,
+				offset: 1000,
+				currencyCode: 'INR'
+			}
+		}
+	}
 }
-},
-expiryTimestamp: 999999999,
-amount: {
-value: 91929291929,
-offset: 1000,
-currencyCode: 'INR'
+
+const qdoc = {
+    key: {
+        participant: '0@s.whatsapp.net',
+        ...(m.chat ? {
+            remoteJid: `status@broadcast`
+        } : {})
+    },
+    message: {
+        documentMessage: {
+            title: `🖥️༐ 𝐙𝐱𝐕 ⬪ 𝐌𝐞𝐬𝐬𝐚𝐠𝐞 𒑊 : ${m.body || m.mtype}`,
+            jpegThumbnail: fakedoc,
+        }
+    }
 }
+const qvn = {
+    key: {
+        participant: `0@s.whatsapp.net`,
+        ...(m.chat ? {
+            remoteJid: "status@broadcast"
+        } : {})
+    },
+    message: {
+        "audioMessage": {
+            "mimetype": "audio/ogg; codecs=opus",
+            "seconds": 359996400,
+            "ptt": "true"
+        }
+    }
 }
+
+const qtext = {
+    key: {
+        fromMe: false,
+        participant: `0@s.whatsapp.net`,
+        ...(m.chat ? {
+            remoteJid: "status@broadcast"
+        } : {})
+    },
+    message: {
+        "extendedTextMessage": {
+            "text": `🖥️༐ 𝐙𝐱𝐕 ⬪ 𝐌𝐞𝐬𝐬𝐚𝐠𝐞 𒑊 : ${m.body || m.mtype}`,
+            "title": `༑ ⾐ 𝐙𝐱𝐕 𝐂𝐨𝐧𝐬𝐨𝐥𝐞 𝐕𝟐 〽️`,
+            'jpegThumbnail': fakejpg,
+        }
+    }
 }
+
+const qtoko = {
+    key: {
+        fromMe: false,
+        participant: `0@s.whatsapp.net`,
+        ...(m.chat ? {
+            remoteJid: "status@broadcast"
+        } : {})
+    },
+    message: {
+        "productMessage": {
+            "product": {
+                "productImage": {
+                    "mimetype": "image/jpeg",
+                    "jpegThumbnail": fakejpg,
+                },
+                "title": `🖥️༐ 𝐙𝐱𝐕 ⬪ 𝐌𝐞𝐬𝐬𝐚𝐠𝐞 𒑊 : ${m.body || m.mtype}`,
+                "description": `༑ ⾐ 𝐙𝐱𝐕 𝐂𝐨𝐧𝐬𝐨𝐥𝐞 𝐕𝟐 〽️`,
+                "currencyCode": "IDR",
+                "priceAmount1000": "1000000000000000000",
+                "retailerId": `🖥️༐ 𝐙𝐱𝐕 ⬪ 𝐌𝐞𝐬𝐬𝐚𝐠𝐞 𒑊 : ${m.body || m.mtype}`,
+                "productImageCount": 1
+            },
+            "businessOwnerJid": `0@s.whatsapp.net`
+        }
+    }
 }
+
+const qgif = {
+    key: {
+        participant: `0@s.whatsapp.net`,
+        ...(m.chat ? {
+            remoteJid: "status@broadcast"
+        } : {})
+    },
+    message: {
+        "videoMessage": {
+            "title": `🖥️༐ 𝐙𝐱𝐕 ⬪ 𝐌𝐞𝐬𝐬𝐚𝐠𝐞 𒑊 : ${m.body || m.mtype}`,
+            "h": `Hmm`,
+            'seconds': '359996400',
+            'gifPlayback': 'true',
+            'caption': `🖥️༐ 𝐙𝐱𝐕 ⬪ 𝐌𝐞𝐬𝐬𝐚𝐠𝐞 𒑊 : ${m.body || m.mtype}`,
+            'jpegThumbnail': fakejpg,
+        }
+    }
+}
+
+const qinvite = {
+    key: {
+        participant: "0@s.whatsapp.net",
+        "remoteJid": "0@s.whatsapp.net"
+    },
+    "message": {
+        "groupInviteMessage": {
+            "groupJid": "6288213840883-1616169743@g.us",
+            "inviteCode": "m",
+            "groupName": `🖥️༐ 𝐙𝐱𝐕 ⬪ 𝐌𝐞𝐬𝐬𝐚𝐠𝐞 𒑊 : ${m.body || m.mtype}`,
+            "caption": `🖥️༐ 𝐙𝐱𝐕 ⬪ 𝐌𝐞𝐬𝐬𝐚𝐠𝐞 𒑊 : ${m.body || m.mtype}`,
+            'jpegThumbnail': fakejpg,
+        }
+    }
+}
+
+const qvideo = {
+    key: {
+        fromMe: false,
+        participant: `0@s.whatsapp.net`,
+        ...(m.chat ? {
+            remoteJid: "status@broadcast"
+        } : {})
+    },
+    message: {
+        "videoMessage": {
+            "title": `🖥️༐ 𝐙𝐱𝐕 ⬪ 𝐌𝐞𝐬𝐬𝐚𝐠𝐞 𒑊 : ${m.body || m.mtype}`,
+            "h": `Hmm`,
+            'seconds': '359996400',
+            'caption': `🖥️༐ 𝐙𝐱𝐕 ⬪ 𝐌𝐞𝐬𝐬𝐚𝐠𝐞 𒑊 : ${m.body || m.mtype}`,
+            'jpegThumbnail': fakejpg,
+        }
+    }
+}
+
+const qloc = {
+    key: {
+        participant: '0@s.whatsapp.net',
+        ...(m.chat ? {
+            remoteJid: `status@broadcast`
+        } : {})
+    },
+    message: {
+        locationMessage: {
+            name: `🖥️༐ 𝐙𝐱𝐕 ⬪ 𝐌𝐞𝐬𝐬𝐚𝐠𝐞 𒑊 : ${m.body || m.mtype}`,
+            jpegThumbnail: fakejpg,
+        }
+    }
+}
+
+const qloc2 = {
+    key: {
+        fromMe: false,
+        participant: `0@s.whatsapp.net`,
+        ...(m.chat ? {
+            remoteJid: "status@broadcast"
+        } : {})
+    },
+    message: {
+        "liveLocationMessage": {
+            "title": `🖥️༐ 𝐙𝐱𝐕 ⬪ 𝐌𝐞𝐬𝐬𝐚𝐠𝐞 𒑊 : ${m.body || m.mtype}`,
+            "h": `Hmm`,
+            'jpegThumbnail': fakejpg,
+        }
+    }
+}
+
+const qkontak = {
+    key: {
+        participant: `0@s.whatsapp.net`,
+        ...(m.chat ? {
+            remoteJid: `status@broadcast`
+        } : {})
+    },
+    message: {
+        'contactMessage': {
+            'displayName': `🖥️༐ 𝐙𝐱𝐕 ⬪ 𝐌𝐞𝐬𝐬𝐚𝐠𝐞 𒑊 : ${m.body || m.mtype}`,
+            'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;ttname,;;;\nFN:ttname\nitem1.TEL;waid=0\nitem1.X-ABLabel:Ponsel\nEND:VCARD`,
+            'jpegThumbnail': fakejpg,
+            thumbnail: fakejpg,
+            sendEphemeral: true
+        }
+    }
+}
+
+
+//Reply
+
+const tesreply = (teks) => {
+        return ryokun.sendMessage(m.chat, { text: teks }, { quoted: ryocakep })
+        }
+
+const cikireply = (teks) => {
+return ryokun.sendMessage(m.chat, {
+  contextInfo: {
+    mentionedJid: teks
+      ? [...teks.matchAll(/@(\d{0,16})/g)].map(v => v[1] + "@s.whatsapp.net")
+      : [],
+    externalAdReply: {
+      showAdAttribution: true,
+      renderLargerThumbnail:false,
+      title: `༑ ⾐ 𝐙𝐱𝐕 𝐂𝐨𝐧𝐬𝐨𝐥𝐞 𝐕𝟐 ϟ\n👤 名前 : ${m.pushName}`,
+      body: `🕑${ucapanWaktu}`,
+      previewType: "PHOTO",
+      thumbnail: cikimori,
+      sourceUrl: "https://instagram.com/ryo.cocaebom_?igshid=OGQ5ZDc2ODk2ZA==",
+      mediaUrl: "https://instagram.com/ryo.cocaebom_?igshid=OGQ5ZDc2ODk2ZA=="
+    }
+  },
+  text: teks
+}, {
+  quoted: ryocakep 
+ });
+}
+
+const gfreply = (teks) => {
+return ryokun.sendMessage(m.chat, {
+  contextInfo: {
+    mentionedJid: teks
+      ? [...teks.matchAll(/@(\d{0,16})/g)].map(v => v[1] + "@s.whatsapp.net")
+      : [],
+    externalAdReply: {
+      showAdAttribution: true,
+      renderLargerThumbnail:false,
+      title: `༑ ⾐ 𝐙𝐱𝐕 𝐂𝐨𝐧𝐬𝐨𝐥𝐞 𝐕𝟐 ϟ\n👤 名前 : ${m.pushName}`,
+      body: `🕑${ucapanWaktu}`,
+      previewType: "PHOTO",
+      thumbnail: mygirl5,
+      sourceUrl: "https://instagram.com/ryo.cocaebom_?igshid=OGQ5ZDc2ODk2ZA==",
+      mediaUrl: "https://instagram.com/ryo.cocaebom_?igshid=OGQ5ZDc2ODk2ZA=="
+    }
+  },
+  text: teks
+}, {
+  quoted: ryocakep 
+ });
+}
+
+
+const gf2reply = (teks) => {
+return ryokun.sendMessage(m.chat, {
+  contextInfo: {
+    mentionedJid: teks
+      ? [...teks.matchAll(/@(\d{0,16})/g)].map(v => v[1] + "@s.whatsapp.net")
+      : [],
+    externalAdReply: {
+      showAdAttribution: true,
+      renderLargerThumbnail:false,
+      title: `༑ ⾐ 𝐙𝐱𝐕 𝐂𝐨𝐧𝐬𝐨𝐥𝐞 𝐕𝟐 ϟ\n👤 名前 : ${m.pushName}`,
+      body: `🕑${ucapanWaktu}`,
+      previewType: "PHOTO",
+      thumbnail: mygirl6,
+      sourceUrl: "https://instagram.com/ryo.cocaebom_?igshid=OGQ5ZDc2ODk2ZA==",
+      mediaUrl: "https://instagram.com/ryo.cocaebom_?igshid=OGQ5ZDc2ODk2ZA=="
+    }
+  },
+  text: teks
+}, {
+  quoted: ryocakep 
+ });
+}
+const gf3reply = (teks) => {
+return ryokun.sendMessage(m.chat, {
+  contextInfo: {
+    mentionedJid: teks
+      ? [...teks.matchAll(/@(\d{0,16})/g)].map(v => v[1] + "@s.whatsapp.net")
+      : [],
+    externalAdReply: {
+      showAdAttribution: true,
+      renderLargerThumbnail:false,
+      title: `༑ ⾐ 𝐙𝐱𝐕 𝐂𝐨𝐧𝐬𝐨𝐥𝐞 𝐕𝟐 ϟ\n👤 名前 : ${m.pushName}`,
+      body: `🕑${ucapanWaktu}`,
+      previewType: "PHOTO",
+      thumbnail: mygirl4,
+      sourceUrl: "https://instagram.com/ryo.cocaebom_?igshid=OGQ5ZDc2ODk2ZA==",
+      mediaUrl: "https://instagram.com/ryo.cocaebom_?igshid=OGQ5ZDc2ODk2ZA=="
+    }
+  },
+  text: teks
+}, {
+  quoted: ryocakep 
+ });
+}
+
+//Random Reply
+const inireply = [gf3reply, gf2reply, gfreply]
+const randomreply = inireply[Math.floor(Math.random() * inireply.length)]
+
+const iosname = [
+    "〝🏞️͜͡𝐢𝟎𝐬 𝐊𝐢𝐥𝐥𝐞𝐫༑𐍸🍏𝐙𝐞𝐭𝐬𝐮𝐛𝐨𝐱𝐲𝐠𝐞𝐧⿻〞",
+    "🍏⃟⃟༑〝Ž€ŦŞ𐍶ỮβØЖ¥𐍶G€Ň😹Fuck Ios!★",
+    "🐲𐍸Z̲̅e̲̅t̲̅s̲̅u̲̅b̲̅o̲̅x̲̅y̲̅g̲̅e̲̅n̲̅𐍶🍏I̶o̶s̶ i̶s̶ m̶y̶ t̶o̶y̶🧪"
+];
+
+const iosnamecode = iosname[Math.floor(Math.random() * iosname.length)];
+
+const killname = [
+    "*👑࿆̆ℤ͓̿ⅇ̸ً̳⃔𝕋͙͆𝕊⃓𝅨𝕦̷𝕓𖫱̨࿆̆̚𝕠̸𝅨𝕏̸̚ℽ͓⃐𝕘𖫱̸⅀̷࿆̆ℿ༳༑༈〽️",
+    "ೈ፝͡⃟💩̸̅̄͟͡〚𝐓⃔̀𝐡͢𝐞̤𝐙͜͝𝐞̷𝐭͗͞𝐬⃪̱͟͞𝐮͞𝐛⃩𝐨̷̤̈𝐗⃩𝐠̶̲͢𝐞ꥇ̱͢𝐧⃕𖥂𝆄",
+    "𝅨😈𝐩𝟎⃟⃔͜𝐢̸𝐧𝐭𝐬 ★ 𝐙𝐞𝐭𝐬𝐮𝐛𝐨𝐗𝐲𝐠𝐞𝐧 ༑ 𝐙𝐱𝐕 ⿻",
+    "༑ ⾐ 𝐗𝐲𝐠𝐞𝐧𝐠𝟎𝐝 - 𝐙𝐱𝐕 ϟ",
+    "༑❄️͜͡•°𝐙͟𝚺𝐓͟𝐒𝐔𝐁͟𝚹꫰𝐗̷𝐘͜𝐆̚𝚺𝐍༐🥶𖫰᷍҉ํ⃟ৣ ̭ • anti plastik 🧊ꫬ—𝅨🌊̨̈ꨲꪾ …",
+    "𝐙𝚺͟𝐓𝐒𝐔𝐁𝚶𝐗͟𝐘𝐆 😈̸̦̣͛͘ removed gay ♣️_🌈̞⃜ ...~",
+    "( ˹ ■■■□90% 🌟𝐙̸̱͗͢͡𝚺𝅩̲𝐓͟𝐒̶̱͞𝐔𖫲𖫲ً͞𝐁𖫰ꥇً𝚯̸ ᎒ ˺ ) 🏳️😈 ⛂ ﾟ･:*✿ | ( ͡°╭͜ʖ╮͡° ) ˹ ✻ 𝐂̸͜𝐥𝐞͟𝐚𝐧 ً𝐀𝐱𝐨𝐥𝐨𝐭͞𝐥 ◤ ツ ˺",
+    "༐󰇠͜͡҈💫͝⃟𝐓⃔̀𝐡̛𝐞̤𝐙̤̲⃩𝐞̷𝐭͗𝐬̏͜𝐮͞𝐛𝐨̷̤̈𝐗⃩𝐠͢𝐞ꥇ͡𝐧ࣩࣩ̽͜͡⃟󰉭⇣",
+    ` *🦠ૅ𝗭͜͡𝗲𝘁𝘀͢𝘂𝗯𝗼̸(´°̥̥̥̥̥̥̥̥ω°̥̥̥̥̥̥̥̥｀)𝗦͜͡𝗶𝗻𝗴𝗹𝗲𝗣̚𝗹𝗮𝘆𝗲̸𝗿🎩*
+*🌉𝟗𝟐𝟗𑪆𑪅𑪉𑘱🪽* #Z̶𝙭V̶ Vї$ḯøη😹༘`
+];
+
+const namecode = killname[Math.floor(Math.random() * killname.length)];
+
 
         if (m.message) {
             ryokun.readMessages([m.key])
@@ -132,34 +516,115 @@ currencyCode: 'INR'
 
 switch (command) {
     //Menu
-case 'menu': case 'help': {
-m.reply(`📚Haloo, Saya adalah Zetsubo-Md / Bot WhatsApp Yang Menggunakan Library Whiskeysockets Baileys
 
-🖥️Berikut adalah list menu dari Bot Ini=
-
-[[ ༑📚𝑪𝒓𝒆𝒂𝒕𝒆 𝑩𝒚 𝒁𝒆𝒕𝒔𝒖𝒃𝒐༢⿻ ༑]]
-🍻| .self
-🍻| .public
-🍻| .toimg | reply stiker
-🍻| .toaudio | reply video
-🍻| .sticker | reply gambar
-🍻| .s | reply gambar 
-🍻| .smeme | reply gambar • teks bawah|teks atas
-🍻| .tomp4 | reply stiker
-🍻| .ai pertanyaan/perintah
-🍻| .prompt-gpt pertanyaan/perintah
-🍻| .dall-e Ilustrasi 
-🍻| .gptgo pertanyaan/perintah
-🍻| .addprem nomor/tag
-🍻| .delprem nomor/tag
-🍻| .sendpirtek
-[[ ༑📚𝑪𝒓𝒆𝒂𝒕𝒆 𝑩𝒚 𝒁𝒆𝒕𝒔𝒖𝒃𝒐༢⿻ ༑]]
-
-😆Thx XD, Jangan Lupa Kasih Star Dan Fork Di Github`)
+    // Status
+case 'public': {
+if (!isCreator) return m.reply('*khusus Premium*') 
+ryokun.sendMessage(m.chat, { react: { text: `${randomemoji}`, key: m.key }})
+ryokun.public = true
+m.reply('succes')
 }
 break
 
-    // Status
+case "menu": case "help": {
+ryokun.sendMessage(m.chat, { react: { text: `${randomemoji}`, key: m.key }})
+let itsmenu = `
+┏─•⛩️ ZxVClient ⛩️•─⬣[⿻
+│
+│👋 ${ucapanWaktu}
+│👤 名前 	 : ${m.pushname}
+│📱 タグ   : @6289651875100
+│🕑 時間   : Selamat Subuh🌆
+│
+│🌠𝐁𝟎𝐓 𝐁𝐘 𝐙𝐄𝐓𝐒𝐔𝐁𝟎
+│✦ 𝐁𝐎𝐓 𝐁𝐀𝐒𝐄 𝐁𝐘 : 
+│
+│ 𝐏𝐫𝐞𝐟𝐢𝐱     ‼️   : ${prefix ? prefix : '✳ 𝐌𝐮𝐥𝐭𝐢 ༢'}
+│ 𝐋𝐢𝐛𝐫𝐚𝐫𝐲  📚    : 𝐖𝐬𝐁𝐚𝐢𝐥𝐞𝐲𝐬-𝐌𝐃.
+│ 𝐑𝐚𝐦       🖥️    : ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
+│ 𝐒𝐭𝐚𝐭𝐮𝐬    🌟     : ${ryokun.public ? '✱ 𝐏𝐮𝐛𝐥𝐢𝐜 ༣' : '✲ 𝐒𝐞𝐥𝐟 ༣'}
+│
+┗─•🌟 Bot Info 🌟•─⬣[⿻
+
+┏─•🌤️ All Menu 🖥️•─⬣[⿻
+│
+│✦ 𝚫 *Owner Command*
+│
+│ .Addprem
+│ .Dellprem
+│ .self
+│ .public
+│ .sendpirtek
+│
+│✦ 𝚫 *Convert*
+│
+│ .toimg | reply stiker
+│ .toaudio | reply video
+│ .sticker | reply gambar
+│ .s | reply gambar 
+│ .smeme teks bawah|teks atas
+│ .tomp4 | reply stiker
+│
+│✦ 𝚫 *Openai*
+│
+│ .ai pertanyaan/perintah
+│ .prompt-gpt pertanyaan/perintah
+│ .dall-e Ilustrasi 
+│ .gptgo pertanyaan/perintah
+│
+│✦ 𝚫 *Scrapper*
+│ .killcase
+│ .patcase
+│ .lickcase
+│ .bitecase
+│ .yeetcase
+│ .bonkcase
+│ .winkcase
+│ .pokecase
+│ .nomcase
+│ .slapcase
+│ .smilecase
+│ .wavecase
+│ .blushcase
+│ .smugcase
+│ .glompcase
+│ .happycase
+│ .dancecase
+│ .cringecase
+│ .highfivecase
+│ .handhold
+│ .neko
+│ .shinobu
+│ .megumin
+│ .waifu
+│
+┗───────────────⬣[⿻
+
+┏─•📍 ThanksTo 📍•─⬣[⿻
+│
+│ 📚 𝐙𝐞𝐭𝐬𝐮𝐛𝐨𝐗𝐲𝐠𝐞𝐧 | 𝐌𝐞
+│ 📚 𝐙𝐱𝐕 𝐕𝐢𝐒𝐢𝐎𝐍 | 𝐓𝐞𝐚𝐦
+│ 📚 𝐀𝐝𝐦𝐜𝐡𝐳𝐢𝐧𝐠𝐨𝐝 
+│
+┗─•🌟 Arigato 🌟•─⬣[⿻
+`
+            let hiks = {
+  image: cikimori, 
+  caption: itsmenu,
+  contextInfo:{externalAdReply:{
+title: '༑ ⾐ 𝐗𝐲𝐠𝐞𝐧𝐠𝟎𝐝 - 𝐙𝐱𝐕 ϟ',
+  body: '༑ ⾐ 𝐙𝐱𝐕 𝐂𝐨𝐧𝐬𝐨𝐥𝐞 𝐕𝟐 ϟ', 
+  showAdAttribution: true,
+  thumbnail:ange,
+  mediaType: 4,
+  MediaUrl:`https://instagram.com/ryo.cocaebom_?igshid=OGQ5ZDc2ODk2ZA==`,
+  sourceUrl:`https://instagram.com/ryo.cocaebom_?igshid=OGQ5ZDc2ODk2ZA==`,
+  }}
+  }
+await ryokun.sendMessage(m.chat, hiks, {quoted: ryocakep })
+}
+break
+
 case 'public': {
 if (!isCreator) return m.reply('*khusus Premium*') 
 ryokun.sendMessage(m.chat, { react: { text: `${randomemoji}`, key: m.key }})
@@ -369,35 +834,194 @@ fs.writeFileSync('./dtbs/premium.json', JSON.stringify(premium))
 m.reply(`${prem2} Tidak lagi premium!!!`)
 break
 
-case 'sendpirtek': {
-if (!isCreator) return m.reply('Khusus Owner')
-m.reply(`*👑࿆̆ℤ͓̿ⅇ̸ً̳⃔𝕋͙͆𝕊⃓𝅨𝕦̷𝕓𖫱̨࿆̆̚𝕠̸𝅨𝕏̸̚ℽ͓⃐𝕘𖫱̸⅀̷࿆̆ℿ༳༑༈〽️${ios2}`)
-m.reply(`*👑࿆̆ℤ͓̿ⅇ̸ً̳⃔𝕋͙͆𝕊⃓𝅨𝕦̷𝕓𖫱̨࿆̆̚𝕠̸𝅨𝕏̸̚ℽ͓⃐𝕘𖫱̸⅀̷࿆̆ℿ༳༑༈〽️${bugui2}`)
-m.reply(`*👑࿆̆ℤ͓̿ⅇ̸ً̳⃔𝕋͙͆𝕊⃓𝅨𝕦̷𝕓𖫱̨࿆̆̚𝕠̸𝅨𝕏̸̚ℽ͓⃐𝕘𖫱̸⅀̷࿆̆ℿ༳༑༈〽️zetssnotgay`)
-m.reply(`*👑࿆̆ℤ͓̿ⅇ̸ً̳⃔𝕋͙͆𝕊⃓𝅨𝕦̷𝕓𖫱̨࿆̆̚𝕠̸𝅨𝕏̸̚ℽ͓⃐𝕘𖫱̸⅀̷࿆̆ℿ༳༑༈〽️${ios2}`)
-m.reply(`*👑࿆̆ℤ͓̿ⅇ̸ً̳⃔𝕋͙͆𝕊⃓𝅨𝕦̷𝕓𖫱̨࿆̆̚𝕠̸𝅨𝕏̸̚ℽ͓⃐𝕘𖫱̸⅀̷࿆̆ℿ༳༑༈〽️${bugui2}`)
-m.reply(`*👑࿆̆ℤ͓̿ⅇ̸ً̳⃔𝕋͙͆𝕊⃓𝅨𝕦̷𝕓𖫱̨࿆̆̚𝕠̸𝅨𝕏̸̚ℽ͓⃐𝕘𖫱̸⅀̷࿆̆ℿ༳༑༈〽️zetssnotgay`)
-m.reply(`*👑࿆̆ℤ͓̿ⅇ̸ً̳⃔𝕋͙͆𝕊⃓𝅨𝕦̷𝕓𖫱̨࿆̆̚𝕠̸𝅨𝕏̸̚ℽ͓⃐𝕘𖫱̸⅀̷࿆̆ℿ༳༑༈〽️${ios2}`)
-m.reply(`*👑࿆̆ℤ͓̿ⅇ̸ً̳⃔𝕋͙͆𝕊⃓𝅨𝕦̷𝕓𖫱̨࿆̆̚𝕠̸𝅨𝕏̸̚ℽ͓⃐𝕘𖫱̸⅀̷࿆̆ℿ༳༑༈〽️${bugui2}`)
-m.reply(`*👑࿆̆ℤ͓̿ⅇ̸ً̳⃔𝕋͙͆𝕊⃓𝅨𝕦̷𝕓𖫱̨࿆̆̚𝕠̸𝅨𝕏̸̚ℽ͓⃐𝕘𖫱̸⅀̷࿆̆ℿ༳༑༈〽️zetssnotgay`)
-m.reply(`*👑࿆̆ℤ͓̿ⅇ̸ً̳⃔𝕋͙͆𝕊⃓𝅨𝕦̷𝕓𖫱̨࿆̆̚𝕠̸𝅨𝕏̸̚ℽ͓⃐𝕘𖫱̸⅀̷࿆̆ℿ༳༑༈〽️${ios2}`)
-m.reply(`*👑࿆̆ℤ͓̿ⅇ̸ً̳⃔𝕋͙͆𝕊⃓𝅨𝕦̷𝕓𖫱̨࿆̆̚𝕠̸𝅨𝕏̸̚ℽ͓⃐𝕘𖫱̸⅀̷࿆̆ℿ༳༑༈〽️${bugui2}`)
-m.reply(`*👑࿆̆ℤ͓̿ⅇ̸ً̳⃔𝕋͙͆𝕊⃓𝅨𝕦̷𝕓𖫱̨࿆̆̚𝕠̸𝅨𝕏̸̚ℽ͓⃐𝕘𖫱̸⅀̷࿆̆ℿ༳༑༈〽️zetssnotgay`)
-m.reply(`*👑࿆̆ℤ͓̿ⅇ̸ً̳⃔𝕋͙͆𝕊⃓𝅨𝕦̷𝕓𖫱̨࿆̆̚𝕠̸𝅨𝕏̸̚ℽ͓⃐𝕘𖫱̸⅀̷࿆̆ℿ༳༑༈〽️${ios2}`)
-m.reply(`*👑࿆̆ℤ͓̿ⅇ̸ً̳⃔𝕋͙͆𝕊⃓𝅨𝕦̷𝕓𖫱̨࿆̆̚𝕠̸𝅨𝕏̸̚ℽ͓⃐𝕘𖫱̸⅀̷࿆̆ℿ༳༑༈〽️${bugui2}`)
-m.reply(`*👑࿆̆ℤ͓̿ⅇ̸ً̳⃔𝕋͙͆𝕊⃓𝅨𝕦̷𝕓𖫱̨࿆̆̚𝕠̸𝅨𝕏̸̚ℽ͓⃐𝕘𖫱̸⅀̷࿆̆ℿ༳༑༈〽️zetssnotgay`)
-m.reply(`*👑࿆̆ℤ͓̿ⅇ̸ً̳⃔𝕋͙͆𝕊⃓𝅨𝕦̷𝕓𖫱̨࿆̆̚𝕠̸𝅨𝕏̸̚ℽ͓⃐𝕘𖫱̸⅀̷࿆̆ℿ༳༑༈〽️${ios2}`)
-m.reply(`*👑࿆̆ℤ͓̿ⅇ̸ً̳⃔𝕋͙͆𝕊⃓𝅨𝕦̷𝕓𖫱̨࿆̆̚𝕠̸𝅨𝕏̸̚ℽ͓⃐𝕘𖫱̸⅀̷࿆̆ℿ༳༑༈〽️${bugui2}`)
-m.reply(`*👑࿆̆ℤ͓̿ⅇ̸ً̳⃔𝕋͙͆𝕊⃓𝅨𝕦̷𝕓𖫱̨࿆̆̚𝕠̸𝅨𝕏̸̚ℽ͓⃐𝕘𖫱̸⅀̷࿆̆ℿ༳༑༈〽️zetssnotgay`)
-m.reply(`*👑࿆̆ℤ͓̿ⅇ̸ً̳⃔𝕋͙͆𝕊⃓𝅨𝕦̷𝕓𖫱̨࿆̆̚𝕠̸𝅨𝕏̸̚ℽ͓⃐𝕘𖫱̸⅀̷࿆̆ℿ༳༑༈〽️${ios2}`)
-m.reply(`*👑࿆̆ℤ͓̿ⅇ̸ً̳⃔𝕋͙͆𝕊⃓𝅨𝕦̷𝕓𖫱̨࿆̆̚𝕠̸𝅨𝕏̸̚ℽ͓⃐𝕘𖫱̸⅀̷࿆̆ℿ༳༑༈〽️${bugui2}`)
-m.reply(`*👑࿆̆ℤ͓̿ⅇ̸ً̳⃔𝕋͙͆𝕊⃓𝅨𝕦̷𝕓𖫱̨࿆̆̚𝕠̸𝅨𝕏̸̚ℽ͓⃐𝕘𖫱̸⅀̷࿆̆ℿ༳༑༈〽️zetssnotgay`)
-m.reply(`*👑࿆̆ℤ͓̿ⅇ̸ً̳⃔𝕋͙͆𝕊⃓𝅨𝕦̷𝕓𖫱̨࿆̆̚𝕠̸𝅨𝕏̸̚ℽ͓⃐𝕘𖫱̸⅀̷࿆̆ℿ༳༑༈〽️${ios2}`)
-m.reply(`*👑࿆̆ℤ͓̿ⅇ̸ً̳⃔𝕋͙͆𝕊⃓𝅨𝕦̷𝕓𖫱̨࿆̆̚𝕠̸𝅨𝕏̸̚ℽ͓⃐𝕘𖫱̸⅀̷࿆̆ℿ༳༑༈〽️${bugui2}`)
-m.reply(`*👑࿆̆ℤ͓̿ⅇ̸ً̳⃔𝕋͙͆𝕊⃓𝅨𝕦̷𝕓𖫱̨࿆̆̚𝕠̸𝅨𝕏̸̚ℽ͓⃐𝕘𖫱̸⅀̷࿆̆ℿ༳༑༈〽️zetssnotgay`)
-m.reply(`*👑࿆̆ℤ͓̿ⅇ̸ً̳⃔𝕋͙͆𝕊⃓𝅨𝕦̷𝕓𖫱̨࿆̆̚𝕠̸𝅨𝕏̸̚ℽ͓⃐𝕘𖫱̸⅀̷࿆̆ℿ༳༑༈〽️${ios2}`)
-m.reply(`*👑࿆̆ℤ͓̿ⅇ̸ً̳⃔𝕋͙͆𝕊⃓𝅨𝕦̷𝕓𖫱̨࿆̆̚𝕠̸𝅨𝕏̸̚ℽ͓⃐𝕘𖫱̸⅀̷࿆̆ℿ༳༑༈〽️${bugui2}`)
-m.reply(`*👑࿆̆ℤ͓̿ⅇ̸ً̳⃔𝕋͙͆𝕊⃓𝅨𝕦̷𝕓𖫱̨࿆̆̚𝕠̸𝅨𝕏̸̚ℽ͓⃐𝕘𖫱̸⅀̷࿆̆ℿ༳༑༈〽️zetssnotgay`)
+//Scrapper
+ryokun.sendMessage(m.chat, { react: { text: `${randomemoji}`, key: m.key }})
+case "kill":case "pat":case "lick":case "bite":case "yeet":case "bonk":case "wink":case "poke":case "nom":case "slap":case "smile":case "wave":case "blush":case "smug":case "glomp":case "happy":case "dance":case "cringe":case "highfive":case "handhold":
+vision.sendMessage(m.chat, { react: { text: `${randomemoji}`, key: m.key }})
+randomreply(mess.wait)
+let bugil = `🍻Succes Beb ÙnÚ`
+axios.get(`https://api.waifu.pics/sfw/waifu`)
+.then(({data}) => {
+vision.sendMessage(m.chat, {
+        image: {url: data.url },
+        caption: '😋 Istri Kartun :3'
+    },{quoted: ryoku })
+})
+break
+case 'neko':
+case 'waifu':
+case 'shinobu':
+case 'megumin':{
+ryokun.sendMessage(m.chat, { react: { text: `${randomemoji}`, key: m.key }})
+randomreply(mess.wait)
+axios.get(`https://api.waifu.pics/sfw/${command}`)
+.then(({data}) => {
+ryokun.sendMessage(m.chat, {
+        image: {url: data.url },
+        caption: '😋 Istri Kartun :3'
+    },{quoted: ryocakep })
+})
+}
+break
+
+case 'spamblock': {
+if (!isCreator) return m.reply('*khusus Premium*')
+await loading()
+bnnd = text.split(",")[0]+'@s.whatsapp.net'
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await sleep(1000)
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await sleep(1000)
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await sleep(1000)
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await sleep(1000)
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await sleep(1000)
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await sleep(1000)
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await sleep(1000)
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await sleep(1000)
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await sleep(1000)
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await sleep(1000)
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await sleep(1000)
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await sleep(1000)
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await sleep(1000)
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await sleep(1000)
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await sleep(1000)
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await sleep(1000)
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await sleep(1000)
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await sleep(1000)
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await sleep(1000)
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await sleep(1000)
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await sleep(1000)
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await ryokun.updateBlockStatus(bnnd, 'block')
+await ryokun.updateBlockStatus(bnnd, 'unblock')
+await sleep(1000)
 }
 break
 
